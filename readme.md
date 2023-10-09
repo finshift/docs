@@ -2,122 +2,191 @@
 
 &nbsp;
 
-## Visão Geral
-O Finshift é a vanguarda da transformação financeira pessoal, redefinindo a maneira como você gerencia, investe e cresce seu patrimônio. Combinando as mais avançadas técnicas de Quantitative Finance com algoritmos de Inteligência Artificial de última geração, o Finshift oferece insights personalizados, recomendações proativas e estratégias otimizadas para maximizar sua saúde financeira. Além de ajudar no rastreamento de gastos e definição de orçamentos, o sistema proporciona uma análise profunda, alinhando recomendações de investimento ao seu perfil e objetivos financeiros. Com assistentes de IA dedicados para gestão patrimonial, análise financeira e investimentos, cada aspecto da sua vida financeira recebe a atenção e expertise que merece. No Finshift, a segurança dos seus dados é prioridade, garantindo que suas informações financeiras permaneçam privadas e protegidas. Mais do que um aplicativo, o Finshift é seu parceiro financeiro, guiando e impulsionando você em direção a um futuro financeiro mais brilhante e próspero.
+## Overview
+Finshift is the vanguard of personal financial transformation, redefining the way you manage, invest and grow your wealth. Combining the most advanced Quantitative Finance techniques with cutting-edge Artificial Intelligence algorithms, Finshift offers personalized insights, proactive recommendations and optimized strategies to maximize your financial health. In addition to helping with tracking expenses and defining budgets, the system provides in-depth analysis, aligning investment recommendations with your profile and financial objectives. With dedicated AI assistants for wealth management, financial analysis, and investments, every aspect of your financial life gets the attention and expertise it deserves. At Finshift, your data security is a priority, ensuring your financial information remains private and protected. More than an app, Finshift is your financial partner, guiding and propelling you towards a brighter, more prosperous financial future.
 
 &nbsp;
 
-## Uma apresentação um pouco mais técnica e menos comercial
-O Finshift é uma plataforma financeira avançada desenvolvida para proporcionar aos usuários uma gestão financeira otimizada. Utilizando técnicas modernas de Quantitative Finance combinadas com algoritmos de Inteligência Artificial, o sistema visa transformar a abordagem tradicional de gerenciamento financeiro em uma experiência mais intuitiva e eficaz.
+## A slightly more technical and less commercial presentation
+Finshift is an advanced financial platform designed to provide users with optimized financial management. Using modern Quantitative Finance techniques combined with Artificial Intelligence algorithms, the system aims to transform the traditional approach to financial management into a more intuitive and effective experience.
 
-O principal objetivo do Finshift é empoderar o usuário comum com ferramentas e insights que, tradicionalmente, estariam disponíveis apenas para experts em finanças. Ao automatizar e otimizar muitos dos processos financeiros tradicionais, o Finshift busca transformar a maneira como os indivíduos gerenciam e investem seu dinheiro, levando-os a alcançar seus objetivos financeiros com maior eficácia, além de enriquecerem por meio de ajustes financeiros, conselhos de investimento, análises de investimento feitos pela IA com algoritmos de Quantitative Finance avançados, etc.
-
-&nbsp;
-
-## Funcionalidades
-
-### 1. Orçamento
-- Ferramenta para criar e gerenciar orçamentos mensais, anuais ou personalizados.
-- Alertas para quando os usuários estiverem se aproximando ou ultrapassando seus limites.
-
-### 2. Planejamento de Metas Financeiras
-- Definição de metas financeiras e plano de ação para alcançá-las.
-- O destaque vai para o plano de ação, que deve ser construído com o auxílio da IA
-
-### 3. Gestão de Dívidas e Financiamentos
-- Ferramentas para gerenciar dívidas, empréstimos e financiamentos, com detalhes sobre taxas de juros, prazos e pagamentos futuros.
-- Esta parte deve estar integrada ao Orçamento e deve ser feito um cálculo de impacto que essa dívida causa no orçamento mensal, anual e nas metas financeiras
-
-### 4. Lançamento de Receitas e Despesas
-- Registro e categorização de receitas e despesas.
-- Conexão com contas bancárias para importação automática de transações.
-
-### 5. Integração com Outras Plataformas
-- Integração com bancos, corretoras, aplicativos de pagamento e outras plataformas financeiras para uma visão holística das finanças.
-
-### 6. Relatórios e Análises
-- Gráficos e relatórios sobre receitas, despesas, fluxo de caixa e patrimônio líquido.
-
-### 7. Dashboard Interativo
-- Visão geral das finanças do usuário: ativos, passivos, receitas, despesas, investimentos e metas financeiras.
-- Este dashboard irá evoluir na medida em que o usuário avance em seu planejamento financeiro, acumule mais capital, tenha mais investimentos, pois no início, geralmente, para o usuário de classe média, não há nenhum aluguel a receber, não há investimentos em ações, FIIs, ou qualquer coisa do tipo
-
-### 8. Gestão de Propriedades e Ativos Tangíveis
-- Ferramentas para gerenciar e rastrear propriedades e outros ativos tangíveis, como veículos e colecionáveis.
-
-### 9. Alertas e Notificações
-- Notificações sobre pagamentos de contas, metas alcançadas e outras informações relevantes.
-
-### 10. Segurança
-- Medidas como criptografia de ponta a ponta e autenticação de dois fatores.
-
-### 11. Backup e Restauração
-- Garantir que os dados dos usuários estejam seguros e possam ser restaurados em caso de perda.
-
-### 12. Suporte ao Cliente
-- Um canal de suporte eficaz para ajudar os usuários com dúvidas ou problemas.
-
-### 13. Acessibilidade
-- A plataforma deve ser acessível em dispositivos móveis e desktop, com uma UX otimizada para ambos.
-
-### 14. Desenvolvimento da IA FinManage V1 (A FinManage V1 é a IA para gestão patrimonial de nível 1, a qual possui funcionalidades mais restritas)
-- IA para efetuar agendamentos de pagamentos, pagamentos automatizados, efetuar operações bancárias, etc. (definiremos a lista de funcionalidades posteriormente)
-
-### 15. Desenvolvimento da IA FinAnalytics V1 (A FinAnalytics V1 é a IA para análise financeira de nível 1, a qual possui funcionalidades mais restritas)
-- IA para buscar extrato bancário e movimentações financeiras, análises profundas das movimentações e contraste com planejamento financeiro global, planejamentos de médio e curto prazo, ... (definiremos a lista de funcionalidades posteriormente)
-
-### 16. Personalização
-- A capacidade de personalizar a interface, relatórios e análises de acordo com as preferências e necessidades do usuário.
-
-### 17. Educação Financeira
-- Conteúdo educacional sobre tópicos financeiros básicos e avançados.
-
-### 18. Análise de Investimentos
-- Rastreamento e análise de investimentos, como ações, títulos e fundos mútuos.
-
-### 19. Calculadoras Financeiras
-- Ferramentas para cálculos relacionados a juros, empréstimos, hipotecas e aposentadoria.
-
-### 20. Desenvolvimento da IA FinStEx V1 (A FinStEx V1 é a IA para investimentos de nível 1, a qual possui funcionalidades mais restritas)
-- IA para buscar extrato bancário e movimentações financeiras, análises profundas das movimentações e contraste com planejamento financeiro global, planejamentos de médio e curto prazo, ... (definiremos a lista de funcionalidades posteriormente)
-
-### 21. Planejamento de Aposentadoria
-- Calculadoras e ferramentas para ajudar os usuários a planejar sua aposentadoria, considerando inflação, expectativa de vida, entre outros fatores, sempre baseado no orçamento atual, nas projeções orçamentárias futuras, nas metas financeiras, etc.
-
-### 22. Planejamento Tributário
-- Ferramentas e informações para ajudar os usuários a otimizar sua situação tributária.
+Finshift's main objective is to empower the average user with tools and insights that would traditionally only be available to finance experts. By automating and optimizing many of the traditional financial processes, Finshift seeks to transform the way individuals manage and invest their money, leading them to achieve their financial goals more effectively, as well as enrich themselves through financial tweaks, investment advice, AI investment analysis with advanced Quantitative Finance algorithms, etc.
 
 &nbsp;
 
-## Assistentes de IA
+## Functionalities (In order of development)
 
-### FinManage -> IA para Gestão Patrimonial (Possui os níveis L1, L2 e L3)
-- Funcionalidades: Agendamentos de pagamentos, integrações com bancos, transferências bancárias, verificação de compromissos fiscais, questões contábeis, e outros recursos relacionados à gestão patrimonial.
-- Tecnologia: Pode usar técnicas de Processamento de Linguagem Natural (PLN) para entender e processar comandos do usuário, além de integrações com APIs bancárias e fiscais.
+### 1. Budget
+- Tool to create and manage monthly, annual or personalized budgets.
+- Alerts when users are getting close to or exceeding their limit.
 
-### FinAnalytics -> IA para Análise Financeira (Possui os níveis L1, L2 e L3)
-- Funcionalidades: Análise de movimentações financeiras, sugestões para melhorias, propostas para pagamento de dívidas, e outros insights financeiros.
-- Tecnologia: Algoritmos de aprendizado de máquina para análise de padrões de gastos e recomendações.
+### 2. Financial Goals Planning
+- Definition of financial goals and action plan to achieve them.
+- The highlight goes to the action plan, which must be built with AI assistance
 
-### FinStEx ([St]ock [Ex]change) -> IA para Investimentos (Possui os níveis L1, L2 e L3)
-- Funcionalidades: Análise de séries históricas, análise fundamentalista, recomendações de investimentos baseadas em quantitative finance.
-- Tecnologia: Algoritmos avançados de aprendizado de máquina e análise quantitativa, integração com bases de dados de ativos e mercados financeiros.
+### 3. Debt and Financing Management
+- Tools to manage debts, loans and financing, with details on interest rates, terms and future payments.
+- This part must be integrated into the Budget and a calculation must be made of the impact that this debt has on the monthly and annual budget and financial goals
+
+### 4. Entry of Income and Expenses
+- Registration and categorization of income and expenses.
+- Connection with bank accounts for automatic import of transactions.
+
+### 5. Integration with Other Platforms
+- Integration with banks, brokers, payment apps and other financial platforms for a holistic view of finances.
+
+### 6. Reports and Analysis
+- Graphs and reports on income, expenses, cash flow and net worth.
+
+### 7. Interactive Dashboard
+- Overview of user finances: assets, liabilities, income, expenses, investments and financial goals.
+- This dashboard will evolve as the user advances in their financial planning, accumulates more capital, has more investments, because in the beginning, generally, for the middle class user, there is no rent to receive, there are no investments in shares , FIIs, or anything like that
+
+### 8. Property and Tangible Asset Management
+- Tools to manage and track properties and other tangible assets such as vehicles and collectibles.
+
+### 9. Alerts and Notifications
+- Notifications about bill payments, goals achieved and other relevant information.
+
+### 10. Security
+- Measures such as end-to-end encryption and two-factor authentication.
+
+### 11. Backup and Restore
+- Ensure that user data is secure and can be restored if lost.
+
+### 12. Customer Support
+- An effective support channel to help users with questions or problems.
+
+### 13. Accessibility
+- The platform must be accessible on mobile and desktop devices, with a UX optimized for both.
+
+### 14. Development of FinManage V1 AI (FinManage V1 is the AI for level 1 asset management, which has more restricted functionalities)
+- AI to make payment schedules, automated payments, carry out banking operations, etc. (we will define the list of features later)
+
+### 15. Development of FinAnalytics V1 AI (FinAnalytics V1 is AI for level 1 financial analysis, which has more restricted functionalities)
+- AI to search for bank statements and financial movements, in-depth analysis of movements and contrast with global financial planning, medium and short term planning, etc. (we will define the list of features later)
+
+### 16. Personalization
+- The ability to customize the interface, reports and analytics according to user preferences and needs.
+
+### 17. Financial Education
+- Educational content on basic and advanced financial topics.
+
+### 18. Investment Analysis
+- Tracking and analyzing investments such as stocks, bonds and mutual funds.
+
+### 19. Financial Calculators
+- Tools for calculations related to interest, loans, mortgages and retirement.
+
+### 20. Development of FinStEx V1 AI (FinStEx V1 is the AI for level 1 investments, which has more restricted functionalities)
+- AI to search for bank statements and financial movements, in-depth analysis of movements and contrast with global financial planning, medium and short term planning, ... (we will define the list of features later)
+
+### 21. Retirement Planning
+- Calculators and tools to help users plan their retirement, considering inflation, life expectancy, among other factors, always based on the current budget, future budget projections, financial goals, etc.
+
+### 22. Tax Planning
+- Tools and information to help users optimize their tax situation.
 
 &nbsp;
 
-## Segmentação de Público
+## AI Assistants
 
-### Plano Starter
-- Público-alvo: Classe média.
-- Funcionalidades: Gestão básica de finanças, orçamentos, rastreamento de gastos, insights sobre hábitos de consumo, e recomendações de investimentos básicos.
-- Assistente de IA: Pode incluir uma versão mais básica do assistente de gestão patrimonial e análise financeira.
+### FinManage -> AI for Wealth MManagement (Has levels L1, L2 and L3)
+- Features: Payment scheduling, integrations with banks, bank transfers, verification of tax commitments, accounting issues, and other resources related to asset management.
+- Technology: Can use Natural Language Processing (NLP) techniques to understand and process user commands, in addition to integrations with banking and tax APIs.
 
-### Plano Performance
-- Público-alvo: Classe A.
-- Funcionalidades: Todas as do plano normal, mais gestão avançada de ativos, análise de investimentos mais detalhada, integrações com mais bancos e corretoras, e recursos adicionais como planejamento tributário e fiscal.
-- Assistente de IA: Versões mais avançadas dos assistentes de gestão patrimonial e análise financeira, além de uma versão básica do assistente de investimentos.
+### FinAnalytics -> AI for Financial Analysis (Has levels L1, L2 and L3)
+- Features: Analysis of financial transactions, suggestions for improvements, proposals for debt payment, and other financial insights.
+- Technology: Machine learning algorithms for analyzing spending patterns and recommendations.
 
-### Plano Fortune
-- Público-alvo: Pessoas que gerenciam grandes fortunas.
-- Funcionalidades: Todas as dos planos anteriores, mais gestão de patrimônio familiar, planejamento sucessório, análise de investimentos internacionais, e outros recursos exclusivos para esse segmento.
-- Assistente de IA: Todos os três assistentes de IA em suas versões mais avançadas e personalizadas.
+### FinStEx ([St]ock [Ex]change) -> AI for Investments (Has levels L1, L2 and L3)
+- Features: Analysis of historical series, fundamental analysis, investment recommendations based on quantitative finance.
+- Technology: Advanced machine learning algorithms and quantitative analysis, integration with asset databases and financial markets.
+
+&nbsp;
+
+## Audience Segmentation
+
+### Starter Plan
+- Target audience: Middle class.
+- Features: Basic finance management, budgets, expense tracking, insights into consumption habits, and basic investment recommendations.
+- AI Assistant: May include a more basic version of the wealth management (L1) and financial analysis assistant (L1).
+
+### Performance Plan
+- Target audience: Class A.
+- Features: All those of the normal plan, plus advanced asset management, more detailed investment analysis, integrations with more banks and brokers, and additional features such as tax and fiscal planning.
+- AI Assistant: More advanced versions of the wealth management (L2) and financial analysis (L2) assistants, in addition to a basic version of the investment assistant (L1).
+
+### Fortune Plan
+- Target audience: People who manage large fortunes.
+- Features: All of the previous plans, plus family wealth management, succession planning, international investment analysis, and other exclusive features for this segment.
+- AI Assistant: All three AI assistants in their most advanced and personalized versions (L3).
+
+&nbsp;
+
+## Project specifications
+- All source code must be written in English (classes, methods, variables, database schemas, code comments, etc.)
+- API returns must be made in English (all translation will be done on the frontend where we will use NextJS)
+- All documentation will be in English
+- The frontend will use an i18n lib to make available initially a version in English and Portuguese (Brazil)
+
+&nbsp;
+
+## Specifications
+
+### Architecture definitions
+- Microservices
+- Internal communication made using gRPC
+
+### Infra
+- Docker (1 container per service)
+- GitHub Actions for CI and CD
+
+### Application Containers
+- Python
+- Flask Framework
+- Nginx as Reverse Proxy
+- Gunicorn as a WSGI server
+- Pytest/Pytest-Flask (Unit tests and Integration tests)
+- PostgreSQL
+
+### Service Discovery Container
+- Consul by Hashicorp
+
+### DataLake Container
+- MongoDB
+
+### Load Test Container
+- Locust (Load test)
+
+### Logging and Monitoring Containers
+- Sentry for logging (Sentry Server Service and Sentry SDK for Python within each container)
+- Prometheus and Grafana for monitoring
+
+### Services
+1. Account
+   - User registration
+   - Registration using Google Account
+2. Authentication
+3. Shared
+4. Onboarding
+5. Budget
+6. Financial Goals (Short, medium, and long term. Including Retirement Planning)
+7. Debt Management
+8. Entry of Income and Expenses
+9.  Integrations
+10. Analytics
+11. Dashboard
+12. Tangible Asset Management
+13. Notifications
+14. Security
+15. Backup
+16. Support
+17. Accessibility
+18. FinManage
+19. DataLake
+20. FinAnalytics
+21. Settings (Personalization, notifications, alerts, etc.)
+22. Investment
+23. FinStEx
+24. Tax planning
