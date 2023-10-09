@@ -107,17 +107,17 @@ Finshift's main objective is to empower the average user with tools and insights
 
 ## Audience Segmentation
 
-### Starter Plan
+###  Plan 'Foundation'
 - Target audience: Middle class.
 - Features: Basic finance management, budgets, expense tracking, insights into consumption habits, and basic investment recommendations.
 - AI Assistant: May include a more basic version of the wealth management (L1) and financial analysis assistant (L1).
 
-### Performance Plan
+### Plan 'Performance'
 - Target audience: Class A.
 - Features: All those of the normal plan, plus advanced asset management, more detailed investment analysis, integrations with more banks and brokers, and additional features such as tax and fiscal planning.
 - AI Assistant: More advanced versions of the wealth management (L2) and financial analysis (L2) assistants, in addition to a basic version of the investment assistant (L1).
 
-### Fortune Plan
+### Plan 'Fortune'
 - Target audience: People who manage large fortunes.
 - Features: All of the previous plans, plus family wealth management, succession planning, international investment analysis, and other exclusive features for this segment.
 - AI Assistant: All three AI assistants in their most advanced and personalized versions (L3).
@@ -165,9 +165,18 @@ Finshift's main objective is to empower the average user with tools and insights
 
 ### Services
 1. Account
-   - User registration
-   - Registration using Google Account
+    - User registration (name, email, password)
+    - Captcha Validation
+    - Token Creation (JWT)
+    - Plan (Foundation, Performance or Fortune) - Free trial for 30 days
+    - Password changing process (The user must validate the beginning of this process informing the current password. If it matches, the service will create a Validation Token (JWT) and send an email with a URL with this validation token. When the user clicks on the link he will be redirected to a page to change the password. This is a process that happens only after the user logs in)
+    - Password recovery process (The user needs to validate the beginning of this process by informing the email. If it matches, the service will create a Validation Token (JWT) and send an email with a URL with this validation token. When the user clicks on the link he will be redirected to a page to change the password. This is a process that happens only with the user being logged out)
+    - Account data update (name, email, password [through the password changing process specified previously], and other information that will be gathered in the Onboarding moment)
 2. Authentication
+    - SignIn (Email and Password)
+    - SignOut
+    - Two Factor Authentication (Email message)
+    - User Session Management
 3. Shared
 4. Onboarding
 5. Budget
