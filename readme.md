@@ -132,38 +132,44 @@ Finshift's main objective is to empower the average user with tools and insights
 
 &nbsp;
 
-## Specifications
+## Infrastructure
 
-### Architecture definitions
-- Microservices
+### Overview
+- Microservices architecture
 - Internal communication made using gRPC
-
-### Infra
 - Docker (1 container per service)
-- GitHub Actions for CI and CD
 
 ### Application Containers
 - Python
 - Flask Framework
+- SQLAlchemy
 - Nginx as Reverse Proxy
-- Gunicorn as a WSGI server
+- Gunicorn as WSGI server
 - Pytest/Pytest-Flask (Unit tests and Integration tests)
 - PostgreSQL
 
 ### Service Discovery Container
 - Consul by Hashicorp
 
-### DataLake Container
-- MongoDB
+### Logging and Monitoring Containers
+- Sentry for error logging (Sentry Server Service and Sentry SDK for Python within each container)
+- Prometheus and Grafana for monitoring
+- ELK Stack as a centralized logging storage
 
 ### Load Test Container
 - Locust (Load test)
 
-### Logging and Monitoring Containers
-- Sentry for logging (Sentry Server Service and Sentry SDK for Python within each container)
-- Prometheus and Grafana for monitoring
+### DataLake Container
+- MongoDB
 
-### Services
+&nbsp;
+
+## Some artifacts
+- FSLog - A logging library made specifically to meet the Finshift application needs. Created upon the Default Python Logging Library, will create logs in batch or not (depending the case) and in an asynchronous way (non-blocking), sending and storing the logs in the ELK Service
+
+&nbsp;
+
+## Application Services
 1. Account
     - User registration (name, email, password)
     - Captcha Validation
@@ -199,3 +205,59 @@ Finshift's main objective is to empower the average user with tools and insights
 22. Investment
 23. FinStEx
 24. Tax planning
+
+&nbsp;
+
+## DevOps
+- GitHub Actions for CI and CD
+
+## Development order (Just a proposal)
+- Create the app folder structure
+- Account Service Implementation
+    - Create the service (Create the folder "/services/account" and inside it puts the requirements.txt, nginx.conf, other configuration or necessary files, and the Dockerfile. Include the service within the docker-compose.yml in the root)
+- Working on the Account Service (The Account Service will be the base for the most of other services)
+    - Implementation of the framework (Flask)
+    - Implementation of the database (PostgreSQL)
+    - Implementation of the SQLAlchemy
+    - Implementation of the models
+    - Execute the migrations and create the database structure
+    - Implementation of the routes, endpoints, views, middlewares, security implementations, etc.
+    - Implementation of the unit tests
+- Service Discovery Service Implementation
+    - Create the service (Create the folder "/services/discovery" and inside it puts the Dockerfile and any other thing required by the Hashicorp's Consul Lib. Include the service within the docker-compose.yml)
+- Logging and Monitoring
+    - Create the FSLog (stands for Finshift Log) Library, and we want this log flow in the application:
+    
+            Asynchronous Logging Flow with ELK Stack:
+            
+            1. Custom Logging Library:
+            - Develop a custom logging library that encapsulates the standard Python logging module.
+            - This library should support asynchronous logging operations, allowing log messages to be buffered and processed in batches or individually as needed.
+            
+            2. Buffering and Asynchronous Logging:
+            - Use buffering to collect and temporarily store log messages before sending them to the centralized storage system.
+            - Implement asynchronous logging to ensure that log writing doesn't block or delay other application operations. Log messages can be placed in a queue and processed in the background, either in batches or individually.
+            
+            3. Integration with ELK Stack:
+            - Configure the library to send logs to the ELK Stack (Elasticsearch, Logstash, Kibana) for centralized storage, analysis, and visualization.
+            - Use Logstash or Filebeat to collect and send logs to Elasticsearch.
+            - In Elasticsearch, logs will be indexed and stored, allowing for fast queries and detailed analysis.
+            - Use Kibana to visualize and analyze the logs, create custom dashboards, and set up alerts for specific events.
+            
+            4. Flexibility and Configuration:
+            - The library should allow for flexible configurations, such as adjusting the buffer size, setting the batch log send interval, and specifying the log level (INFO, ERROR, DEBUG, etc.).
+            - Provide options to handle send failures, such as retry attempts or temporary local storage.
+            
+            5. Security and Compliance:
+            - Ensure logs are transmitted securely, using encryption in transit.
+            - Implement access controls in the ELK Stack to ensure only authorized personnel can view or modify the logs.
+            
+            6. Monitoring and Alerts:
+            - Use Kibana to set up real-time alerts for critical events or suspicious patterns in the logs.
+            - Monitor the health and performance of the logging system to ensure ongoing availability and efficiency.
+    - Prometheus Implementation
+        - Create the service (Create the folder "/services/prometheus" and inside it puts the Dockerfile and the Prometheus config file. Include the service within the docker-compose.yml)
+    - Grafana Implementation
+        - Create the service (Create the folder "/services/grafana" and inside it puts the Dockerfile. Include the service within the docker-compose.yml)
+- Load Test Implementation
+    - Create the service for Locust (Create the folder "/services/loadtest" and inside it puts the Dockerfile and any other necessary file. Include the service within the docker-compose.yml)
