@@ -129,6 +129,7 @@ Finshift's main objective is to empower the average user with tools and insights
 - API returns must be made in English (all translation will be done on the frontend where we will use NextJS)
 - All documentation will be in English
 - The frontend will use an i18n lib to make available initially a version in English and Portuguese (Brazil)
+- The Backend API documentation will be created using readme app (https://readme.com)
 
 &nbsp;
 
@@ -138,6 +139,9 @@ Finshift's main objective is to empower the average user with tools and insights
 - Microservices architecture
 - Internal communication made using gRPC
 - Docker (1 container per service)
+
+### Authorization Container
+- Service dedicated to receive and filter all requests made against any of the services, authorize the access and use of the desired service resources, and redirect the request
 
 ### Application Containers
 - Python
@@ -172,8 +176,6 @@ Finshift's main objective is to empower the average user with tools and insights
 ## Application Services
 1. Account
     - User registration (name, email, password)
-    - Captcha Validation
-    - Token Creation (JWT)
     - Plan (Foundation, Performance or Fortune) - Free trial for 30 days
     - Password changing process (The user must validate the beginning of this process informing the current password. If it matches, the service will create a Validation Token (JWT) and send an email with a URL with this validation token. When the user clicks on the link he will be redirected to a page to change the password. This is a process that happens only after the user logs in)
     - Password recovery process (The user needs to validate the beginning of this process by informing the email. If it matches, the service will create a Validation Token (JWT) and send an email with a URL with this validation token. When the user clicks on the link he will be redirected to a page to change the password. This is a process that happens only with the user being logged out)
@@ -190,6 +192,7 @@ Finshift's main objective is to empower the average user with tools and insights
 7. Debt Management
 8. Entry of Income and Expenses
 9.  Integrations
+    - Google ReCaptcha integration
 10. Analytics
 11. Dashboard
 12. Tangible Asset Management
