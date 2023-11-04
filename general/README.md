@@ -1,6 +1,6 @@
-# Finshift
-
-&nbsp;
+Finshift  
+Application
+===========
 
 ## Overview
 Finshift is the vanguard of personal financial transformation, redefining the way you manage, invest and grow your wealth. Combining the most advanced Quantitative Finance techniques with cutting-edge Artificial Intelligence algorithms, Finshift offers personalized insights, proactive recommendations and optimized strategies to maximize your financial health. In addition to helping with tracking expenses and defining budgets, the system provides in-depth analysis, aligning investment recommendations with your profile and financial objectives. With dedicated AI assistants for wealth management, financial analysis, and investments, every aspect of your financial life gets the attention and expertise it deserves. At Finshift, your data security is a priority, ensuring your financial information remains private and protected. More than an app, Finshift is your financial partner, guiding and propelling you towards a brighter, more prosperous financial future.
@@ -14,77 +14,80 @@ Finshift's main objective is to empower the average user with tools and insights
 
 &nbsp;
 
-## Functionalities (In order of development)
+## Features (In order of development)
 
-### 1. Budget
+### Accounts
+- Common feature just to register and sign in the user in the system
+
+### Budget
 - Tool to create and manage monthly, annual or personalized budgets.
 - Alerts when users are getting close to or exceeding their limit.
 
-### 2. Financial Goals Planning
+### Financial Goals Planning
 - Definition of financial goals and action plan to achieve them.
 - The highlight goes to the action plan, which must be built with AI assistance
 
-### 3. Debt and Financing Management
+### Debt and Financing Management
 - Tools to manage debts, loans and financing, with details on interest rates, terms and future payments.
 - This part must be integrated into the Budget and a calculation must be made of the impact that this debt has on the monthly and annual budget and financial goals
 
-### 4. Entry of Income and Expenses
+### Income and Expenses
 - Registration and categorization of income and expenses.
 - Connection with bank accounts for automatic import of transactions.
 
-### 5. Integration with Other Platforms
+### Integration with Other Platforms
 - Integration with banks, brokers, payment apps and other financial platforms for a holistic view of finances.
 
-### 6. Reports and Analysis
+### Reports and Analysis
 - Graphs and reports on income, expenses, cash flow and net worth.
 
-### 7. Interactive Dashboard
+### Interactive Dashboard
 - Overview of user finances: assets, liabilities, income, expenses, investments and financial goals.
 - This dashboard will evolve as the user advances in their financial planning, accumulates more capital, has more investments, because in the beginning, generally, for the middle class user, there is no rent to receive, there are no investments in shares , FIIs, or anything like that
 
-### 8. Property and Tangible Asset Management
+### Property and Tangible Asset Management
 - Tools to manage and track properties and other tangible assets such as vehicles and collectibles.
 
-### 9. Alerts and Notifications
+### Alerts and Notifications
 - Notifications about bill payments, goals achieved and other relevant information.
 
-### 10. Security
+### Security
 - Measures such as end-to-end encryption and two-factor authentication.
 
-### 11. Backup and Restore
+### Backup and Restore
 - Ensure that user data is secure and can be restored if lost.
 
-### 12. Customer Support
+### Customer Support
 - An effective support channel to help users with questions or problems.
 
-### 13. Accessibility
+### Accessibility
 - The platform must be accessible on mobile and desktop devices, with a UX optimized for both.
 
-### 14. Development of FinManage V1 AI (FinManage V1 is the AI for level 1 asset management, which has more restricted functionalities)
+### Development of FinManage V1 AI (FinManage V1 is the AI for level 1 asset management, which has more restricted functionalities)
 - AI to make payment schedules, automated payments, carry out banking operations, etc. (we will define the list of features later)
 
-### 15. Development of FinAnalytics V1 AI (FinAnalytics V1 is AI for level 1 financial analysis, which has more restricted functionalities)
+### Development of FinAnalytics V1 AI (FinAnalytics V1 is AI for level 1 financial analysis, which has more restricted functionalities)
 - AI to search for bank statements and financial movements, in-depth analysis of movements and contrast with global financial planning, medium and short term planning, etc. (we will define the list of features later)
 
-### 16. Personalization
+### Personalization
 - The ability to customize the interface, reports and analytics according to user preferences and needs.
 
-### 17. Financial Education
+### Financial Education
 - Educational content on basic and advanced financial topics.
 
-### 18. Investment Analysis
+### Investment Analysis
 - Tracking and analyzing investments such as stocks, bonds and mutual funds.
 
-### 19. Financial Calculators
+### Financial Calculators
 - Tools for calculations related to interest, loans, mortgages and retirement.
 
-### 20. Development of FinStEx V1 AI (FinStEx V1 is the AI for level 1 investments, which has more restricted functionalities)
+### Development of FinStEx V1 AI (FinStEx V1 is the AI for level 1 investments, which has more restricted functionalities)
 - AI to search for bank statements and financial movements, in-depth analysis of movements and contrast with global financial planning, medium and short term planning, ... (we will define the list of features later)
 
-### 21. Retirement Planning
+### Retirement Planning
 - Calculators and tools to help users plan their retirement, considering inflation, life expectancy, among other factors, always based on the current budget, future budget projections, financial goals, etc.
 
-### 22. Tax Planning
+### Tax Planning
 - Tools and information to help users optimize their tax situation.
 
 &nbsp;
@@ -180,12 +183,13 @@ Finshift's main objective is to empower the average user with tools and insights
     - Password changing process (The user must validate the beginning of this process informing the current password. If it matches, the service will create a Validation Token (JWT) and send an email with a URL with this validation token. When the user clicks on the link he will be redirected to a page to change the password. This is a process that happens only after the user logs in)
     - Password recovery process (The user needs to validate the beginning of this process by informing the email. If it matches, the service will create a Validation Token (JWT) and send an email with a URL with this validation token. When the user clicks on the link he will be redirected to a page to change the password. This is a process that happens only with the user being logged out)
     - Account data update (name, email, password [through the password changing process specified previously], and other information that will be gathered in the Onboarding moment)
+    - Account deletion (We will define after what to do here)
 2. Authentication
     - SignIn (Email and Password)
     - SignOut
     - Two Factor Authentication (Email message)
-    - User Session Management
 3. Shared
+    - User Session Management
 4. Onboarding
 5. Budget
 6. Financial Goals (Short, medium, and long term. Including Retirement Planning)
